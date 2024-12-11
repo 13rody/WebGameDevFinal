@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\assets",
+    "\\libs",
+    "\\server",
+    "\\src",
+    "\\src\\scenes",
+    "\\Styles"
   ],
-  "SelectedNode": "\\C:\\Users\\emman\\Source\\Repos\\WebGameDevFinal",
+  "SelectedNode": "\\Styles\\style.css",
   "PreviewInSolutionExplorer": false
 }
