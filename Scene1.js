@@ -4,10 +4,10 @@ class Scene1 extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image('player', '../assets/images/player.png');
-        this.load.image('enemy1', '../assets/images/enemy1.png');
-        this.load.image('enemy2', '../assets/images/enemy2.png');
-        this.load.image('bullet', '../assets/images/bullet.png');
+        this.load.image('player', 'assets/images/player.png');
+        this.load.image('enemy1', 'assets/images/enemy1.png');
+        this.load.image('enemy2', 'assets/images/enemy2.png');
+        this.load.image('bullet', 'assets/images/bullet.png');
         this.load.once('complete', function () {
             console.log('All assets loaded');
         });
@@ -57,6 +57,9 @@ class Scene1 extends Phaser.Scene {
 
     update() {
         const speed = 200;
+
+        // Reset player velocity
+        this.player.setVelocity(0);
 
         // Movement controls
         if (this.cursors.left.isDown) this.player.setVelocityX(-speed);
